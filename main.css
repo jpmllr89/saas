@@ -26,3 +26,14 @@
 .navbar-links{
   padding: var(--size-20) var(--size-14);
 }
+
+/* hero section */
+
+.vector1{
+  width: 884.5px;
+  height: 517px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(312.27deg, var(--grad1) 17.61%, var(--grad2) 55.85%);
+}
