@@ -36,6 +36,7 @@
 
 *{
   font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
 }
 
 body{
@@ -48,4 +49,13 @@ a{
 
 ul li{
   list-style-type: none;
+}
+
+/* button styles or highlights */
+.btn-1{
+  color: var(--white);
+  background-color: var(--link);
+  border-radius: 25px;
+  padding: var(--size-14) var(--size-22);
+  font-weight: 700;
 }

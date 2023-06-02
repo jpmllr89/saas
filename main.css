@@ -1,0 +1,28 @@
+/* Navbar */
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: var(--size-20) var(--size-40);
+}
+
+.navbar-logo{
+  width: var(--size-100);
+}
+
+.navbar-logo img{
+  width: 100%;
+}
+
+.navbar-links a:not(:last-child){
+  padding: var(--size-14);
+  color: var(--font-color-main);
+}
+
+.navbar-links{
+  padding: var(--size-20) var(--size-14);
+}
