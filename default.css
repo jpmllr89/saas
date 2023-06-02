@@ -1,0 +1,51 @@
+/* global variables */
+
+:root{
+  /* use black for font-emphasis */
+  --black: #000;
+  --link: #2476FF;
+  --white: #fff;
+  --highlight: #01C9A7;
+  --grad1: rgba(217,217,217,.44);
+  --grad2: rgba(217,217,217,0);
+  --slate: #e1e7ef;
+  --logo-icon1: #3F7DE0;
+  --logo-icon3: #00DFFC;
+  --front-color: #377DFF;
+  --bullet-circle: #ECF2FF;
+  --bullet-circle-inner: #0066FF;
+  
+  --font-color-dark: #5F6368;
+  --font-color-main: #677788;
+
+  /* size variables */
+  --size-10: 0.625rem;
+  --size-12: 0.75rem;
+  --size-14: 0.875rem;
+  --size-16: 1rem;
+  --size-20: 1.25rem;
+  --size-22: 1.375rem;
+  --size-30: 1.875rem;
+  --size-40: 2.5rem;
+  --size-50: 3.125rem;
+  --size-60: 3.75rem;
+  --size-70: 4.375rem;
+  --size-100: 6.25rem;
+  --size-150: 9.375rem;
+}
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul li{
+  list-style-type: none;
+}
