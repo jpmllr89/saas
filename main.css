@@ -179,7 +179,9 @@ left: var(--size-50);
 /* } */
 
 /* benefits section */
-
+.benefits{
+  background-color: transparent;
+}
 .benefits-block-text{
   text-align: center;
 }
@@ -193,4 +195,21 @@ left: var(--size-50);
   margin: 0;
   color: var(--font-color-main);
   padding: var(--size-10);
+}
+
+.benefits-showcase{
+  gap: var(--size-30);
+  padding: var(--size-30);
+  justify-content: center;
+}
+
+.benefits-showcase-card{
+  width: fill;
+  height: hug;
+  box-shadow: 2px 2px 20px rgba(12, 12, 12, .1);
+  padding: var(--size-20);
+}
+
+.benefits-showcase-card img{
+  width: 48px;
 }
