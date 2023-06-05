@@ -75,18 +75,23 @@ transform: skew(-10deg, -10deg);
   padding: var(--size-40);
 }
 
-.logo-a, .logo-b{
+/* .logo-a, .logo-b{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   position: relative;
-}
+} */
 
 
-
+.hero-left-panel,
 .hero-right-panel{
-  flex: none;
+  width: 50%;
 }
+/* .hero-right-panel{
+  position: relative;
+  top: var(--size-40);
+  left: 500px;
+} */
 
 
 .hero-left-panel h1, .hero-left-panel p{
@@ -123,11 +128,47 @@ transform: skew(-10deg, -10deg);
   width:var(--size-40);
 }
 
-.img_e{
-  padding: 10px;
+.img_a,
+.img_b, 
+.img_c,
+.img_d,
+.img_e,
+.img_f,
+.img_g{
+  padding: var(--size-10);
   background-color: white;
-  border:black solid 1px;
-  border-radius: 30px;
+  border-radius: var(--size-30);
+  box-shadow: 0 3px 10px rgba(12, 12, 12, .30);
+  position:relative;
+  display:inline-block;
+}
+.img_a{
+  top:var(--size-30);
+  left: var(--size-30);
+}
+.img_b{
+  top:var(--size-30);
+  left: var(--size-30);
+}
+.img_c{
+  top:var(--size-30);
+  left: var(--size-30);
+}
+.img_d{
+  top:var(--size-30);
+  left: var(--size-30);
+}
+.img_e{
+  top: var(--size-10);
+  left: var(--size-60);
+}
+.img_f{
+  top:var(--size-30);
+  left: var(--size-30);
+}
+.img_g{
+top: var(--size-100);
+left: var(--size-50);
 }
 /* .logo-a img{
   width: var(--size-40);
@@ -137,3 +178,19 @@ transform: skew(-10deg, -10deg);
   width: calc(var(--size-40) + 8px); */
 /* } */
 
+/* benefits section */
+
+.benefits-block-text{
+  text-align: center;
+}
+
+.benefits-block-text h3{
+  margin: 0;
+  font-size: var(--size-40);
+}
+
+.benefits-block-text p{
+  margin: 0;
+  color: var(--font-color-main);
+  padding: var(--size-10);
+}
