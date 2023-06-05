@@ -40,7 +40,9 @@
 }
 
 body{
-  margin: 0;
+  /* margin: 0 auto; */
+  /* max-width: 1024px; */
+
 }
 
 a{
@@ -58,4 +60,9 @@ ul li{
   border-radius: 25px;
   padding: var(--size-14) var(--size-22);
   font-weight: 700;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
 }
