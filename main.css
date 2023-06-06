@@ -182,18 +182,19 @@ left: var(--size-50);
 .benefits{
   background-color: transparent;
 }
-.benefits-block-text{
+.benefits-block-text, .persuasion-block-text{
   text-align: center;
 }
 
-.benefits-block-text h3,{
+.benefits-block-text h3, .persuasion-block-text h3{
   margin: 0;
-  font-size: var(--size-40);
+  font-size: calc(var(--size-20) + 6px);
 }
 
-.benefits-block-text p{
+.benefits-block-text p, .persuasion-block-text p{
   margin: 0;
   padding: var(--size-10);
+  font-weight: 500;
 }
 
 .benefits-showcase{
@@ -235,6 +236,7 @@ left: var(--size-50);
 .video-1{
   background-color: #F8FAFE;
   padding-top: 150px;
+  margin: 0 var(--size-30);
 }
 
 .video-1-block-text{
@@ -252,7 +254,42 @@ left: var(--size-50);
 .video-1-panel img{
   position: relative;
   top: 4px;
-  left: 2px;
+  left: -26px;
   align-items: end;
   width: 500px;
+}
+
+/* persuasion section */
+.persuasion-graphic{
+  justify-content: center;
+}
+.bullet{
+  text-align:center;
+}
+.bulletpoint{
+  align-items:center;
+}
+.bulletpoint .circle{
+  color: var(--link);
+  background-color: #ECF2FF;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--size-30);
+  align-items: center;
+  justify-content: center;
+}
+
+.line{
+  width: 88px;
+  background-color: #ECF2FF;
+  height: 1px;
+}
+
+.hide{
+  background-color: white;
+}
+
+.bullet h4{
+  font-size: var(--size-16);
+  font-weight: 500;
 }
