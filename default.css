@@ -2,6 +2,8 @@
 
 :root{
   /* use black for font-emphasis */
+  --bonus: #01C9A7;
+
   --black: #000;
   --link: #2476FF;
   --white: #fff;
@@ -65,4 +67,12 @@ ul li{
 .row{
   display: flex;
   flex-direction: row;
+}
+
+p{
+  color: var(--font-color-main);
+}
+
+h4{
+  font-size: var(--size-14);
 }
