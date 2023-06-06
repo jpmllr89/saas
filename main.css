@@ -293,3 +293,28 @@ left: var(--size-50);
   font-size: var(--size-16);
   font-weight: 500;
 }
+
+/* second video section */
+
+.video-2{
+  margin: 0 var(--size-30);
+}
+.video-wrapper{
+  position:relative;
+}
+.video-wrapper img{
+  width: 100%;
+}
+
+.play-button{
+  position: absolute;
+  background-color: white;
+  left: 45%;
+  top:45%;
+  color: var(--font-color-main);
+  padding: 35px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+  border-radius: 50%;
+  font-size: var(--size-30);
+  text-align:center;
+}
