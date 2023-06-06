@@ -69,6 +69,11 @@ ul li{
   flex-direction: row;
 }
 
+.col{
+  display: flex;
+  flex-direction:column;
+}
+
 p{
   color: var(--font-color-main);
 }
