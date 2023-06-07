@@ -385,3 +385,9 @@ left: var(--size-50);
   color: var(--font-color-main);
 }
 
+.brand-header{
+  text-align: center;
+  color: var(--font-color-main);
+  font-size: var(--size-20);
+
+}
