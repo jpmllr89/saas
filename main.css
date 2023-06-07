@@ -186,7 +186,7 @@ left: var(--size-50);
   text-align: center;
 }
 
-.benefits-block-text h3, .persuasion-block-text h3{
+.benefits-block-text h3, .persuasion-block-text h3, .pricing-header h3{
   margin: 0;
   font-size: calc(var(--size-20) + 6px);
 }
@@ -380,7 +380,8 @@ left: var(--size-50);
   margin: 0;
 }
 
-.person-tag span{
+.person-tag span,
+.pricing-header span{
   font-size: var(--size-14);
   color: var(--font-color-main);
 }
@@ -406,3 +407,26 @@ left: var(--size-50);
 .brand-logos img{
   width: 100px;
 }
+
+/* pricing section */
+
+.pricing-header{
+  text-align: center;
+}
+
+.pricing-panel{
+  display:flex;
+  flex-direction:row;
+  padding: var(--size-50) var(--size-40);
+  flex: 1 2;
+  gap: var(--size-30);
+}
+.price-card{
+  padding: var(--size-60) var(--size-40);
+}
+.ad-panel{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
