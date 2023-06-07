@@ -385,9 +385,24 @@ left: var(--size-50);
   color: var(--font-color-main);
 }
 
+/* branding section */
+
+.branding{
+  padding-bottom: 80px;
+}
 .brand-header{
   text-align: center;
   color: var(--font-color-main);
   font-size: var(--size-20);
+}
 
+.brand-logos{
+  display:flex;
+  flex-direction: row;
+  gap: var(--size-100);
+  justify-content: center;
+}
+
+.brand-logos img{
+  width: 100px;
 }
