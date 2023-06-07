@@ -217,7 +217,7 @@ left: var(--size-50);
 .bonus{
 }
 
-.bonus h4 span{
+.bonus h4 > span{
   margin-left: var(--size-10);
   font-size: var(--size-12);
   padding: 4px var(--size-10);
@@ -430,6 +430,7 @@ left: var(--size-50);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  gap: var(--size-20);
 }
 
 .price-card h3{
@@ -456,6 +457,18 @@ left: var(--size-50);
   color: var(--font-color-main);
 }
 
+.ad-panel-card{
+  padding: var(--size-20);
+  border: white 1px solid;
+  gap: var(--size-20);
+}
+
 .ad-panel-card img{
-  
+  width: var(--size-40);
+  height: var(--size-40);
+}
+
+.ad-panel-card h4,
+.ad-panel-card p{
+  margin: 0;
 }
