@@ -423,6 +423,8 @@ left: var(--size-50);
 }
 .price-card{
   padding: var(--size-60) var(--size-40);
+  border: white;
+  box-shadow: 0 10px 20px 0px rgb(0 0 0 / 15%);
 }
 .ad-panel{
   display: grid;
@@ -430,3 +432,30 @@ left: var(--size-50);
   grid-template-rows: repeat(2, 1fr);
 }
 
+.price-card h3{
+  font-size: var(--size-50);
+  font-weight: 500;
+  margin: 0;
+}
+.price-card hr{
+  margin: var(--size-20) 0;
+}
+.price-card h3 > span{
+  font-size: var(--size-20);
+  color: var(--font-color-main);
+}
+
+.price-card p{
+  font-size: var(--size-16);
+  margin-bottom: var(--size-30);
+}
+.price-card > span{
+  display: block;
+  padding-top: var(--size-30);
+  font-size: var(--size-14);
+  color: var(--font-color-main);
+}
+
+.ad-panel-card img{
+  
+}
