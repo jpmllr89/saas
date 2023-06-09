@@ -61,7 +61,8 @@ ul li{
   background-color: var(--link);
   border-radius: 25px;
   padding: var(--size-14) var(--size-22);
-  font-weight: 700;
+  font-weight: 500;
+  font-size: var(--size-12);
 }
 
 .row{

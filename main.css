@@ -381,7 +381,8 @@ left: var(--size-50);
 }
 
 .person-tag span,
-.pricing-header span{
+.pricing-header span,
+.checkbox span{
   font-size: var(--size-14);
   color: var(--font-color-main);
 }
@@ -478,12 +479,14 @@ left: var(--size-50);
 .service-form{
   display: flex;
   flex-direction: row;
-  flex:1;
+  flex: 1;
   background-color: #20335B;
+  gap: var(--size-60);
+  align-items: center;
 }
 
 .service-form-testimonial-panel{
-  padding: 140px 70px;
+  padding: 0 0 0 var(--size-70);
 }
 
 .service-form-testimonial-panel h3{
@@ -498,6 +501,17 @@ left: var(--size-50);
 .service-form-testimonial-panel .quote{
   color: var(--white);
   font-style:italic;
+}
+
+.service-form-testimonial-panel h4{
+  color: white;
+  font-size: var(--size-18);
+  margin: 0 0 4px 0;
+}
+
+.service-form-testimonial-panel span{
+  color: var(--font-color-dark);
+  font-size: var(--size-14);
 }
 
 .sign-up-form{
@@ -517,7 +531,7 @@ left: var(--size-50);
   flex-direction: row;
   gap: var(--size-30);
   align-items: center;
-  padding-top: var(--size-20);
+  padding-top: var(--size-60);
 }
 
 .profile-pics img{
@@ -528,4 +542,60 @@ left: var(--size-50);
 .profile-pics img.magnify{
   width:var(--size-60);
   height:var(--size-60);
+}
+
+.sign-up-form form fieldset input{
+  border-radius: 4px;
+  padding: var(--size-10);
+  border: 1px var(--font-color-main) solid;
+}
+
+fieldset.col{
+  gap: 20px;
+}
+
+fieldset.col div.row{
+  gap: 20px;
+}
+
+.selector{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid var(--font-color-main);
+  align-items: center;
+  border-radius: 4px;
+}
+
+.row > .selector > input{
+  border: none;
+  width: 50%;
+}
+
+.selector > i {
+  padding-right: var(--size-10);
+}
+
+.priv{
+  justify-content: center;
+}
+
+.priv a{
+  border-bottom: dotted;
+  font-weight: 600;
+}
+
+.priv a:first-child{
+  color: var(--font-color-main);
+}
+
+.priv a:last-child{
+  color: var(--link);
+}
+
+fieldset > a{
+  text-align:center;
+  margin:var(--size-20) auto 0 auto;
+  font-weight: 400 !important;
+  font-size: var(--size-12);
 }
