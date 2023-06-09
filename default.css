@@ -51,8 +51,18 @@ a{
   text-decoration: none;
 }
 
+ul{
+  padding-left: 0;
+}
+
 ul li{
   list-style-type: none;
+}
+
+ul li i,
+p i,
+a i{
+  margin: 0 8px;
 }
 
 /* button styles or highlights */
@@ -81,4 +91,22 @@ p{
 
 h4{
   font-size: var(--size-14);
+}
+
+.attn{
+  color: white;
+  font-weight: 400;
+  background-color: var(--link);
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 8px;
+}
+
+.link{
+  color: var(--link);
+}
+
+#clicked{
+  background-color: var(--font-color-main);
+  color: white;
 }
