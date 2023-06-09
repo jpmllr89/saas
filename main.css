@@ -15,7 +15,7 @@ nav{
 }
 
 .logo-brand{
-  width: var(--size-100);
+  width: var(--size-150);
 }
 
 .logo-brand img{
@@ -23,9 +23,11 @@ nav{
 }
 
 .navbar-links a:not(:last-child){
-  padding: var(--size-14);
+  padding: var(--size-10);
   color: var(--font-color-main);
+  font-size: var(--size-14);
 }
+
 
 .navbar-links{
   padding: var(--size-20) var(--size-14);
@@ -39,6 +41,7 @@ nav{
   left: 0.5px;
   z-index: -1;
   overflow: hidden;
+  padding-bottom: var(--size-100);
 }
 
 .vector1{
@@ -67,6 +70,7 @@ background-color: #e1e7ef;
 translate: 170px -155px;
 scale: 1.25;
 transform: skew(-10deg, -10deg);
+
 }
 
 .hero{
@@ -86,6 +90,7 @@ transform: skew(-10deg, -10deg);
 .hero-left-panel,
 .hero-right-panel{
   width: 50%;
+  background-color: transparent;
 }
 /* .hero-right-panel{
   position: relative;
@@ -101,12 +106,14 @@ transform: skew(-10deg, -10deg);
 
 .hero-left-panel h1{
   font-weight: 500;
-  line-height: 1.5;
-  font-size: var(--size-30);
+  line-height: var(--size-50);
+  font-size: var(--size-40);
 }
 
 .hero-left-panel p{
-  font-size: var(--size-12);
+  font-size: var(--size-14);
+  line-height: var(--size-16);
+  padding-top: 10px;
 }
 
 .options{
@@ -120,12 +127,11 @@ transform: skew(-10deg, -10deg);
 .options a:nth-child(2), .benefits-showcase-card a{
   font-weight: 600;
   color: var(--link);
+  font-size: var(--size-14);
+  padding-left: var(--size-10);
 }
-/* .hero-right-panel{
-  position: absolute;
-} */
-.hero-right-panel img{
-  width:var(--size-40);
+.hero-right-panel{
+  position: relative;
 }
 
 .img_a,
@@ -135,40 +141,76 @@ transform: skew(-10deg, -10deg);
 .img_e,
 .img_f,
 .img_g{
-  padding: var(--size-10);
   background-color: white;
-  border-radius: var(--size-30);
   box-shadow: 0 3px 10px rgba(12, 12, 12, .30);
-  position:relative;
-  display:inline-block;
+  position:absolute;
+  /* display:inline-block; */
 }
-.img_a{
-  top:var(--size-30);
-  left: var(--size-30);
-}
-.img_b{
-  top:var(--size-30);
-  left: var(--size-30);
-}
-.img_c{
-  top:var(--size-30);
-  left: var(--size-30);
-}
-.img_d{
-  top:var(--size-30);
-  left: var(--size-30);
-}
-.img_e{
-  top: var(--size-10);
-  left: var(--size-60);
-}
-.img_f{
-  top:var(--size-30);
-  left: var(--size-30);
-}
+
+.img_a,
+.img_b, 
+.img_c,
+.img_f,
 .img_g{
-top: var(--size-100);
-left: var(--size-50);
+
+  padding: var(--size-16);
+  border-radius: var(--size-40);
+}
+
+.hero-right-panel  img{
+  width: var(--size-50);
+}
+
+.hero-right-panel div.img_e img,
+.hero-right-panel div.img_d img{
+  width: var(--size-30);
+}
+.img_e,
+.img_d{
+  padding: var(--size-14);
+  border-radius: var(--size-40);
+
+}
+
+
+/* asana */
+.img_a{
+  top:0;
+  left: 375px;
+}
+/* atlassian */
+.img_b{
+  top: 0;
+  left: 180px;
+}
+/* calendar */
+.img_c{
+  top: 290px;
+  left: 375px;
+}
+
+/* google-A */
+.img_d{
+  top:275px;
+  left: 165px;
+}
+
+/* google */
+.img_e{
+  top: 0;
+  left: 15px;
+}
+
+/* paypal */
+.img_f{
+  top:var(--size-150);
+  left: 0;
+}
+
+/* weave */
+.img_g{
+top: var(--size-150);
+left: 250px;
 }
 /* .logo-a img{
   width: var(--size-40);
@@ -181,6 +223,7 @@ left: var(--size-50);
 /* benefits section */
 .benefits{
   background-color: transparent;
+  margin-top: var(--size-50);
 }
 .benefits-block-text, .persuasion-block-text{
   text-align: center;
@@ -260,6 +303,10 @@ left: var(--size-50);
 }
 
 /* persuasion section */
+.persuasion{
+  margin: var(--size-80) 0;
+  gap: var(--size-60);
+}
 .persuasion-graphic{
   justify-content: center;
 }
@@ -297,7 +344,7 @@ left: var(--size-50);
 /* second video section */
 
 .video-2{
-  margin: 0 var(--size-30);
+  margin: var(--size-100) var(--size-30);
 }
 .video-wrapper{
   position:relative;
@@ -395,6 +442,9 @@ left: var(--size-50);
 .brand-header{
   text-align: center;
   color: var(--font-color-main);
+}
+
+.brand-header h3{
   font-size: var(--size-20);
 }
 
@@ -403,6 +453,7 @@ left: var(--size-50);
   flex-direction: row;
   gap: var(--size-100);
   justify-content: center;
+  padding: var(--size-30) 0;
 }
 
 .brand-logos img{
@@ -413,6 +464,11 @@ left: var(--size-50);
 
 .pricing-header{
   text-align: center;
+  gap: var(--size-14);
+}
+
+.pricing-header span{
+  font-size: 16px;
 }
 
 .pricing-panel{
@@ -423,10 +479,15 @@ left: var(--size-50);
   gap: var(--size-30);
 }
 .price-card{
-  padding: var(--size-60) var(--size-40);
+  padding: var(--size-80) var(--size-40) var(--size-40) var(--size-40);
   border: white;
   box-shadow: 0 10px 20px 0px rgb(0 0 0 / 15%);
 }
+
+.price-card a{
+  width: fit-content;
+}
+
 .ad-panel{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -453,8 +514,8 @@ left: var(--size-50);
 }
 .price-card > span{
   display: block;
-  padding-top: var(--size-30);
-  font-size: var(--size-14);
+  padding-top: var(--size-12);
+  font-size: var(--size-12);
   color: var(--font-color-main);
 }
 
