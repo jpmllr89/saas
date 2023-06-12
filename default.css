@@ -113,8 +113,14 @@ h4{
   font-size: 8px;
 }
 
+a.clicked{
+  background-color: var(--font-color-main);
+
+}
+
 a.link,
-li.link{
+li.link,
+span.link{
   color: var(--link);
 }
 

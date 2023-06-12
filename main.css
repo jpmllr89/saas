@@ -551,27 +551,36 @@ left: 250px;
   gap: var(--size-60);
 }
 
-.actual_testimonial h3{
+.testimonial-panel-top p{
+  padding-top: 10px;
+}
+
+.testimonial-panel-top h3{
   color: var(--white);
   font-size: calc(var(--size-20) + 6px);
 }
 
-.actual_testimonial hr{
-  margin: var(--size-30) 0;
+.testimonial-panel-top hr{
+  margin: var(--size-30) 0 var(--size-20) 0;
+  width: 50%;
 }
 
-.service-form-testimonial-panel .quote{
+.testimonial-panel-top .quote{
   color: var(--white);
   font-style:italic;
 }
 
-.actual_testimonial h4{
+.testimonial-panel-top *:not(hr){
+  margin: 0;
+}
+
+.name-tag h4{
   color: white;
   font-size: var(--size-18);
   margin: 0 0 4px 0;
 }
 
-.actual_testimonial span{
+.name-tag span{
   color: var(--font-color-dark);
   font-size: var(--size-14);
 }
@@ -710,10 +719,11 @@ footer p, footer li{
   gap: var(--size-10);
 }
 
-.crumb-navigation{
+.crumb-navigation span{
   font-size: var(--size-14);
   color: var(--font-color-main);
 }
+
 
 .footer-miscellaneous{
   display: flex;
