@@ -585,7 +585,6 @@ padding: 30px;
 
   border: none;
   padding: 30px;
-  margin: 0 30px 0 0;
   border-radius: 10px;
   background-color: var(--white);
 }
@@ -614,9 +613,6 @@ padding: 30px;
   border: 1px var(--font-color-main) solid;
 }
 
-form{
-  width: 90%;
-}
 
 form.col{
   gap: 20px;
@@ -637,12 +633,15 @@ form.col div.row{
 
 .row > .selector > input{
   border: none;
-  width: 216px;
+  width: 178px;
 }
 
-fieldset{
-  border: none;
+div.row > input{
   width: 200px;
+}
+
+div.checkbox >input{
+  width: 50px;
 }
 
 .selector > i {
