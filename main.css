@@ -540,7 +540,7 @@ left: 250px;
 .service-form{
   display: flex;
   flex-direction: row;
-  flex: 1;
+  flex: none;
   background-color: #20335B;
   gap: var(--size-60);
   align-items: center;
@@ -548,14 +548,15 @@ left: 250px;
 
 .service-form-testimonial-panel{
   padding: 0 0 0 var(--size-70);
+  gap: var(--size-60);
 }
 
-.service-form-testimonial-panel h3{
+.actual_testimonial h3{
   color: var(--white);
   font-size: calc(var(--size-20) + 6px);
 }
 
-.service-form-testimonial-panel hr{
+.actual_testimonial hr{
   margin: var(--size-30) 0;
 }
 
@@ -564,25 +565,27 @@ left: 250px;
   font-style:italic;
 }
 
-.service-form-testimonial-panel h4{
+.actual_testimonial h4{
   color: white;
   font-size: var(--size-18);
   margin: 0 0 4px 0;
 }
 
-.service-form-testimonial-panel span{
+.actual_testimonial span{
   color: var(--font-color-dark);
   font-size: var(--size-14);
 }
 
 .sign-up-form{
-  padding: 30px;
+  /* padding: 30px; */
+padding: 30px;
+  width: fit-content;
 }
-.sign-up-form >form > fieldset{
-  display: flex;
-  flex-direction: column;
+.sign-up-form > form {
+
   border: none;
   padding: 30px;
+  margin: 0 30px 0 0;
   border-radius: 10px;
   background-color: var(--white);
 }
@@ -605,17 +608,21 @@ left: 250px;
   height:var(--size-60);
 }
 
-.sign-up-form form fieldset input{
+.sign-up-form form input{
   border-radius: 4px;
   padding: var(--size-10);
   border: 1px var(--font-color-main) solid;
 }
 
-fieldset.col{
+form{
+  width: 90%;
+}
+
+form.col{
   gap: 20px;
 }
 
-fieldset.col div.row{
+form.col div.row{
   gap: 20px;
 }
 
@@ -630,7 +637,12 @@ fieldset.col div.row{
 
 .row > .selector > input{
   border: none;
-  width: 50%;
+  width: 216px;
+}
+
+fieldset{
+  border: none;
+  width: 200px;
 }
 
 .selector > i {
@@ -654,7 +666,7 @@ fieldset.col div.row{
   color: var(--link);
 }
 
-fieldset > a{
+form > a{
   text-align:center;
   margin:var(--size-20) auto 0 auto;
   font-weight: 400 !important;
