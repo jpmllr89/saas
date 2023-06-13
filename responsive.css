@@ -6,9 +6,17 @@
   [aria-controls="navbarDropdown"]{
     display: block;
     border: none;
+    position: absolute;
+    top: var(--size-40);
+    right: var(--size-20);
     color: var(--font-color-main);
     background-color: transparent;
     font-size: var(--size-16);
+  }
+
+  .navbar span{
+    cursor: pointer;
+    pointer-events: none;
   }
 
   [aria-expanded="false"] ~ div.navbar-links{
@@ -17,8 +25,18 @@
 
   [aria-expanded="true"] ~ div.navbar-links{
     display: block;
+    position: absolute;
+    top: 80px;
+    border-top: solid 1px var(--font-color-main);
+    background-color: white;
   }
 
+  [aria-expanded="true"] ~ div.navbar-links > a.btn-1{
+    display: block;
+    text-align: center;
+    margin: var(--size-20) auto;
+    width: fit-content;
+  }
   .hero{
     display: flex; 
     flex-direction: column;
