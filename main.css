@@ -14,6 +14,10 @@ nav{
   padding: var(--size-20) var(--size-40);
 }
 
+[aria-controls="navbarDropdown"]{
+  display: none;
+}
+
 .logo-brand{
   width: var(--size-150);
 }

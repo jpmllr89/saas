@@ -1,6 +1,22 @@
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 768px){
   .navbar-links{
     display: none;
+  }
+
+  [aria-controls="navbarDropdown"]{
+    display: block;
+    border: none;
+    color: var(--font-color-main);
+    background-color: transparent;
+    font-size: var(--size-16);
+  }
+
+  [aria-expanded="false"] ~ div.navbar-links{
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ div.navbar-links{
+    display: block;
   }
 
   .hero{

@@ -25,6 +25,9 @@
         <div class="logo-brand">
           <img src="assets/project_logo/logo.svg" alt="">
         </div>
+        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+          <span>&#9776;</span>
+        </button>
         <div class="navbar-links">
           <a href="">Home</a>
           <a href="" class="link">Features</a>
@@ -386,6 +389,15 @@
       <p>When you visit or interact with our sites, services or tools, we r our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
     </div>
   </footer>
+<script>
+  const navButton = document.querySelector('button[aria-expanded]');
 
+  function toggleNav({ target }){
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navButton.setAttribute('aria-expanded', !expanded);
+  }
+
+  navButton.addEventListener('click', toggleNav);
+</script>
 </body>
 </html>
