@@ -26,9 +26,12 @@
   [aria-expanded="true"] ~ div.navbar-links{
     display: block;
     position: absolute;
+    width: 100%;
     top: 80px;
+    left: 0;
     border-top: solid 1px var(--font-color-main);
     background-color: white;
+    text-align: center;
   }
 
   [aria-expanded="true"] ~ div.navbar-links > a.btn-1{
