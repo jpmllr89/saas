@@ -1,3 +1,9 @@
+@media screen and (max-width: 1024px) {
+  .hero{
+    height: 800px;
+  }
+}
+
 @media screen and (max-width: 768px){
   .navbar-links{
     display: none;
@@ -40,10 +46,10 @@
     margin: var(--size-20) auto;
     width: fit-content;
   }
+
   .hero{
     display: flex; 
     flex-direction: column;
-    align-items: center;
   }
 
   .benefits-showcase{
@@ -53,6 +59,8 @@
 
   .hero-left-panel{
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: var(--size-20);
   }
 
   .options{
@@ -148,5 +156,48 @@
   
   .line{
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .ad-panel{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-form-testimonial-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-panel-top{
+    align-items: center;
+  }
+
+  .footer-sitemap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-map-card-panel{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-miscellaneous{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media > li:last-child{
+    display: block;
+  }
+
+  .brand-logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
