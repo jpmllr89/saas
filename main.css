@@ -226,7 +226,7 @@ left: 250px;
 /* benefits section */
 .benefits{
   background-color: transparent;
-  margin-top: var(--size-50);
+  margin-top: var(--size-80);
 }
 .benefits-block-text, .persuasion-block-text{
   text-align: center;
@@ -342,7 +342,7 @@ left: 250px;
 }
 
 .line{
-  width: 88px;
+  width: var(--size-70);
   background-color: #ECF2FF;
   height: 1px;
 }

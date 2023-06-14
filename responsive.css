@@ -1,10 +1,14 @@
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .hero{
     height: 800px;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
+  .hero{
+    height: 800px;
+  }
+
   .navbar-links{
     display: none;
   }
@@ -136,7 +140,7 @@
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   .benefits-showcase{
     display: flex;
     flex-direction: column;
@@ -146,6 +150,7 @@
     display: flex;
     flex-direction: column;
     padding-left: var(--size-30);
+    margin: 0 auto;
   }
 
   .bullet{
@@ -157,9 +162,50 @@
   .line{
     display: none;
   }
+
+  .ad-panel{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-form-testimonial-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-panel-top{
+    align-items: center;
+  }
+
+  .footer-sitemap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-map-card-panel{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-miscellaneous{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media > li:last-child{
+    display: block;
+  }
+
+  .brand-logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 480px){
   .ad-panel{
     display: flex;
     flex-direction: column;
