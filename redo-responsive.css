@@ -1,0 +1,271 @@
+@media screen and (max-width: 1023px){
+
+  /* navbar-button section */
+
+  .navbar-links{
+    display: none;
+  }
+
+  [aria-controls="navbarDropdown"]{
+    display: block;
+    border: none;
+    position: absolute;
+    top: var(--size-40);
+    right: var(--size-20);
+    color: var(--font-color-main);
+    background-color: transparent;
+    font-size: var(--size-16);
+  }
+
+  .navbar span{
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  [aria-expanded="false"] ~ div.navbar-links{
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ div.navbar-links{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    border-top: solid 1px var(--font-color-main);
+    background-color: white;
+    text-align: center;
+  }
+
+  [aria-expanded="true"] ~ div.navbar-links > a.btn-1{
+    display: block;
+    text-align: center;
+    margin: var(--size-20) auto;
+    width: fit-content;
+  }
+
+  /* hero section */
+
+  .hero{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-right-panel{
+    margin-left: -200px;
+  }
+
+  .hero-left-panel{
+    text-align: center;
+    margin-bottom: var(--size-20);
+  }
+
+  .options{
+    justify-content: center;
+  }
+
+  /* benefits section */
+  .benefits-showcase{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* video-1 section */
+
+  .video-1{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .video-1-block-text,
+  .video-1-panel{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .video-1-panel img{
+    width: 100%;
+    position: static;
+  }
+
+  /* persuasion section */
+
+  /* testimonial section */
+
+  .testimonial{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-block-text{
+    text-align: center;
+    padding: 0;
+  }
+
+  .testimonial-block-text{
+    text-align: center;
+    padding: 0;
+  }
+  .testimonial-block-text img{
+    margin: 0 auto;
+  }
+  .testimonial-block-text h3{
+    padding: 0 var(--size-30);
+  }
+
+  /* pricing section */
+
+  .pricing-panel{
+    flex-direction: column;
+  }
+
+  .person-tag h4{
+    font-size: var(--size-18);
+  }
+
+  .price-card{
+    text-align: center;
+  }
+
+  .price-card a.btn-1{
+    margin: 0 auto;
+  }
+
+  /* service form section */
+
+  .service-form{
+    flex-direction: column;
+    gap: var(--size-10);
+  }
+
+  .service-form-testimonial-panel{
+    flex-direction: row;
+    padding: var(--size-30);
+  }
+
+  .testimonial-panel-top hr{
+    width: 100%;
+  }
+
+  .profile-pics{
+    padding-top: var(--size-30);
+  }
+  .priv{
+    justify-content: left;
+    gap: var(--size-20);
+    margin-left: 55px;
+  }
+
+  .site-map-card-panel{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--size-40);
+  }
+
+  .footer-sitemap{
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  .benefits-showcase{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* persuasion */
+
+  .persuasion-graphic{
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--size-30);
+    margin: 0 auto;
+  }
+
+  .bullet{
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-20);
+  }
+
+  .line{
+    display: none;
+  }
+
+  /* branding section */
+
+  .brand-logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand-logos .img-wrapper{
+    width: 50%;
+  }
+
+  /* pricing section */
+
+  .ad-panel{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* service-form */
+
+  .service-form-testimonial-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-panel-top{
+    text-align: center;
+  }
+
+  .testimonial-panel-top br{
+    display: none;
+  }
+
+  .form-input{
+    flex-direction: column;
+  }
+
+  .form-input > input,
+  .form-input > .selector{
+    width: 100%;
+  }
+
+  /* footer */
+  .footer-sitemap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-map-card-panel{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-miscellaneous{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media > li:last-child{
+    display: block;
+  }
+
+  .footer-copyright p:nth-child(2){
+    width: 75%;
+  }
+
+
+
+}
