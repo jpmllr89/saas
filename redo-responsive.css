@@ -176,7 +176,9 @@
     display: flex;
     flex-direction: column;
   }
-
+  .vector2{
+    translate: -25px -111px;
+  }
   /* persuasion */
 
   .persuasion-graphic{
@@ -268,4 +270,10 @@
 
 
 
+}
+
+@media screen and (min-width: 375px) and (max-width: 766px){
+  .vector2{
+    translate: -375px -49px;
+  }
 }

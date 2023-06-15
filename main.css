@@ -41,19 +41,26 @@ nav{
   align-items: center;
 }
 
+.navbar-links a{
+  margin-left: var(--size-40);
+}
+
 /* hero section */
 #top-background{
   width:100%;
   position: absolute;
-  display: flex;
-  flex-direction: row;
   top: -1px;
   left: 0.5px;
   z-index: -1;
   overflow: hidden;
   padding-bottom: var(--size-100);
 }
-
+.background-wrapper{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
 .vector1{
   width: 100%;
   height: 32.31rem;
@@ -77,9 +84,9 @@ height: 443px;
 left: 44.47rem;
 top: 0px;
 background-color: #e1e7ef;
-translate: 170px -155px;
+translate: 170px -145px;
 scale: 1.25;
-transform: skew(-13deg, -10deg);
+transform: skew(-20deg, -10deg);
 
 }
 
@@ -126,6 +133,10 @@ transform: skew(-13deg, -10deg);
   flex-direction: row;
   gap: var(--size-10);
   align-items: center;
+}
+.options a{
+  display: flex;
+  flex-direction: row;
 }
 
 .options a:nth-child(2), .benefits-showcase-card a{
