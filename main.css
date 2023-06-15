@@ -73,6 +73,11 @@ nav{
 
 }
 
+.ree p{
+  color: red;
+  font-size: var(--size-70);
+}
+
 /* .vector1:after{
   transform:rotate(30deg);
 } */
