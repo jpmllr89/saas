@@ -105,10 +105,6 @@
     padding: 0;
   }
 
-  .testimonial-block-text{
-    text-align: center;
-    padding: 0;
-  }
   .testimonial-block-text img{
     margin: 0 auto;
   }
@@ -268,6 +264,10 @@
     width: 75%;
   }
 
+  .footer-sitemap-address{
+    align-items: center;
+  }
+
 
 
 }
@@ -276,4 +276,92 @@
   .vector2{
     translate: -375px -49px;
   }
+
+  .benefits{
+    margin-top: var(--size-150);
+  }
+
+  .hero-left-panel h1{
+    text-indent: -40px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .img_a{
+    top:0;
+    left: 260px;
+  }
+  /* atlassian */
+  .img_b{
+    top: 0;
+    left: 100px;
+  }
+  /* calendar */
+  .img_c{
+    top: 290px;
+    left: 250px;
+  }
+  
+  /* google-A */
+  .img_d{
+    top:275px;
+    left: 120px;
+  }
+  
+  /* google */
+  .img_e{
+    top: 0;
+    left: 0px;
+  }
+  
+  /* paypal */
+  .img_f{
+    top:var(--size-150);
+    left: 0;
+  }
+  
+  /* weave */
+  .img_g{
+  top: var(--size-150);
+  left: 175px;
+  }
+
+  /* testimonial pic */
+
+  /* .testimonial-img-panel .img-wrapper{
+    max-width: 300px;
+    margin: 0 auto;
+  } */
+
+
+  [aria-expanded="true"] ~ div.navbar-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  [aria-expanded="true"] ~ div.navbar-links a{
+    margin-left: 0;
+  }
+
+  .testimonial-img-panel .img-wrapper{
+    position: relative;
+    height: 450px;
+    width: 450px;
+  }
+  .testimonial-img-panel .img-wrapper img:nth-child(1){
+    position:absolute;
+    max-width: 300px;
+    left: 100px;
+  }
+  .testimonial-img-panel .img-wrapper img:nth-child(2){
+    display:inline;
+    position:absolute;
+    z-index: -1;
+    left: var(--size-60);
+    top: 20px;
+    max-width: 275px;
+    height: auto;
+  }
+
 }

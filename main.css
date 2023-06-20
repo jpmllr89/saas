@@ -92,6 +92,10 @@ transform: skew(-20deg, -10deg);
 
 }
 
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .hero{
   width: 100%;
   padding: var(--size-40);
@@ -420,8 +424,8 @@ left: 250px;
   display:inline;
   position:absolute;
   z-index: -1;
-  left: 28px;
-  top: 95px;
+  left: var(--size-30);
+  top: calc(var(--size-80) + 8px);
   width: 200px;
   height: auto;
 }
@@ -482,7 +486,7 @@ left: 250px;
 .brand-logos{
   display:flex;
   flex-direction: row;
-  gap: var(--size-100);
+  gap: var(--size-50);
   justify-content: center;
   padding: var(--size-30) 0;
 }
@@ -514,7 +518,7 @@ left: 250px;
   gap: var(--size-30);
 }
 .price-card{
-  padding: var(--size-80) var(--size-40) var(--size-40) var(--size-40);
+  padding: var(--size-40);
   border: white;
   box-shadow: 0 10px 20px 0px rgb(0 0 0 / 15%);
 }
@@ -733,7 +737,7 @@ footer{
 .footer-sitemap{
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   gap:var(--size-40);
   padding-bottom: var(--size-40);
   border-bottom: solid 1px lightgray;
