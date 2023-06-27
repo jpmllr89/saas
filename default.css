@@ -75,8 +75,12 @@ a.btn-1{
   padding: var(--size-14) var(--size-22);
   font-weight: 700;
   align-items: center;
+  transition: .4s;
 }
 
+a.btn-1:hover{
+  background-color: #1144ff;
+}
 a.btn-1 > i{
   font-size: var(--size-18);
 }

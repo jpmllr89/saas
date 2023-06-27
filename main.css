@@ -92,6 +92,29 @@ transform: skew(-20deg, -10deg);
 
 }
 
+/* keyframes and animations */
+@keyframes fade-slide-from-right{
+  from{
+    opacity: 0%;
+    margin-left: 100%;
+  }
+
+  to{
+    opacity: 100%;
+    margin-left: 0%;
+  }
+}
+
+@keyframes fade{
+  from{
+    opacity: 0%;
+  }
+
+  to{
+    opacity: 100%;
+  }
+}
+
 .main{
   max-width: 1200px;
   margin: 0 auto;
@@ -103,6 +126,7 @@ transform: skew(-20deg, -10deg);
   display: flex;
   flex-direction: row;
 }
+
 
 .hero-left-panel,
 .hero-right-panel{
@@ -177,6 +201,12 @@ transform: skew(-20deg, -10deg);
 
   padding: var(--size-16);
   border-radius: var(--size-40);
+}
+
+.logos-wrapper div{
+  animation-duration: 2s;
+  animation-name: fade-slide-from-right;
+
 }
 
 .hero-right-panel  img{
@@ -350,7 +380,9 @@ left: 250px;
   display: flex;
   flex-direction: column;
   text-align:center;
+  transition: .4s;
 }
+
 .bulletpoint{
   align-items:center;
   display: flex;
@@ -568,6 +600,11 @@ left: 250px;
   padding: var(--size-20);
   border: white 1px solid;
   gap: var(--size-20);
+  transition: .4s;
+}
+
+.ad-panel-card:hover{
+  box-shadow: 0 10px 20px 0px rgb(0 0 0 / 15%);
 }
 
 .ad-panel-card img{
@@ -644,8 +681,9 @@ left: 250px;
   width: var(--size-40);
   height: var(--size-40);
   border-radius: var(--size-30);
+  transition: .4s;
 }
-.profile-pics img.magnify{
+.profile-pics img:hover{
   width:var(--size-60);
   height:var(--size-60);
 }
@@ -770,6 +808,11 @@ footer p, footer li{
   gap: var(--size-12);
 
 }
+
+.sitemap-card ul li:hover{
+  color: var(--link);
+  cursor: pointer;
+}
 .footer-sitemap-address, 
 .sitemap-card{
   gap: var(--size-10);
@@ -780,6 +823,10 @@ footer p, footer li{
   color: var(--font-color-main);
 }
 
+.crumb-navigation span:hover{
+  color: var(--link);
+  cursor: pointer;
+}
 
 .footer-miscellaneous{
   display: flex;
@@ -802,9 +849,14 @@ footer p, footer li{
   background-color: #ECF2FF;
   color: gray;
   border-radius: 8px;
+  transition: .4s;
 }
 
 .social-media a.clicked{
+  background-color: var(--font-color-main);
+  color: white;
+}
+.social-media li a:hover{
   background-color: var(--font-color-main);
   color: white;
 }
