@@ -557,6 +557,7 @@ left: 250px;
 .pricing-panel{
   display:flex;
   flex-direction:row;
+  justify-content: center;
   padding: var(--size-50) var(--size-40);
   flex: 1 2;
   gap: var(--size-30);
