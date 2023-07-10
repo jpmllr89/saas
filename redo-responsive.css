@@ -210,7 +210,7 @@
 
   /* pricing section */
 
-  .ad-panel{
+  .components{
     display: flex;
     flex-direction: column;
   }
