@@ -24,7 +24,7 @@
   </div>
   
     <nav>
-      <div class="navbar">
+      <div class="navbar" id="topNav">
         <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
           <span>&#9776;</span>
         </button>
@@ -48,7 +48,7 @@
   <div class="main">
     <section class="hero">
       <div class="hero-left-panel">
-        <h1>Empowering<br> teams with the<br> freedom</h1>
+        <h1>Empowering<br> teams with<br> freedom</h1>
         <p>Own the unrivaled power of the web development</p>
         <div class="options">
           <a href="" class="btn-1">
@@ -379,6 +379,15 @@
   }
 
   navButton.addEventListener('click', toggleNav);
+
+  const nav = document.getElementById("topNav");
+        window.onscroll = function(){
+            if (window.pageYOffset > 100){
+                nav.classList.add("sticky");
+            } else{
+                nav.classList.remove("sticky");
+            }
+        }
 </script>
 </body>
 </html>
